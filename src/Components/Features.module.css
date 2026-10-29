@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Fjalla+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montenegrin+Gothic+One&family=Oswald:wght@200..700&family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.parentdiv {
+  height: 175vh;
+  width: 100%;
+  background-color: #ebefef;
+}
+
+.contentpart1 h5 {
+  font-size: 0.8vw;
+  color: #00D47E;
+  font-weight: 700;
+}
+
+.contentpart1 h2 {
+  font-size: 2.3vw;
+  color: black;
+  font-weight: 550;
+}
+
+.contentpart1 p {
+  width: 68%;
+  font-size: 1vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.396);
+}
+
+.contentpart1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3vw 4vw;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.9vw;
+  padding: 0 4vw 0 4vw;
+}
+
+.box {
+  height: 14vw;
+  border-radius: 10px;
+  border: 2px solid rgba(151, 147, 147, 0.352);
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  gap: 1.5vw;
+}
+
+.left img {
+  height: 12vw;
+  width: 10.5vw;
+  border-radius: 0.7vw;
+  object-fit: cover;
+}
+
+.right img {
+  height: 4vw;
+  width: 4vw;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.right h3 {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.right p {
+  font-size: 0.8vw;
+  font-weight: 550;
+  color: rgba(0, 0, 0, 0.396);
+}
+
+.parentheading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vw 0 0 0;
+}
+
+.content1 h1 {
+  font-size: 2.6vw;
+  color: black;
+  font-weight: 500;
+}
+
+.content1 h3,
+span {
+  font-size: 2.7vw;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.396);
+}
+
+.para p {
+  font-size: 1.2vw;
+  color: rgba(0, 0, 0, 0.396);
+  font-weight: 500;
+
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7vw;
+  padding: 3vw;
+  text-align: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle {
+  width: 14vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #dae0dd88;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.circle img {
+  height: 4vw;
+  width: 4vw;
+}
+
+.circle:hover {
+  background: white;
+  box-shadow: 0 8px 25px #00000015;
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  margin-top: 1vw;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.feature p {
+  max-width: 14vw;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.396);
+  font-weight: 500;
+}
+
+
+@media (max-width: 600px) {
+
+  .parentdiv {
+    height: 100%;
+    width: 100%;
+  }
+
+  .contentpart1 {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .contentpart1 h5 {
+    font-size: 3vw;
+  }
+
+  .contentpart1 h2 {
+    font-size: 3.5vw;
+  }
+
+  .contentpart1 p {
+    font-size: 2.2vw;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.9vw;
+    padding: 0 4vw 0 4vw;
+  }
+
+  .box {
+    height: 32vw;
+    border-radius: 10px;
+    border: 2px solid rgba(151, 147, 147, 0.352);
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    gap: 1.5vw;
+  }
+
+  .left img {
+    height: 27vw;
+    width: 20vw;
+  }
+
+  .right img {
+    height: 8vw;
+    width: 8vw;
+
+  }
+
+  .right h3 {
+    font-size: 2.5vw;
+  }
+
+  .right p {
+    font-size: 1.7vw;
+  }
+
+  .parentheading {
+    padding-top: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .content1 h1 {
+    font-size: 5.3vw;
+  }
+
+  .content1 h3,
+  span {
+    font-size: 5.3vw;
+  }
+
+  .para p {
+    font-size: 2.5vw;
+
+  }
+
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7vw;
+    padding: 3vw;
+    text-align: center;
+  }
+
+  .circle {
+    width: 37vw;
+  }
+
+  .circle img {
+    height: 9vw;
+    width: 9vw;
+  }
+
+  .feature h3 {
+    margin-top: 3vw;
+    font-size: 4.2vw;
+    font-weight: 500;
+  }
+
+  .feature p {
+    max-width: 55vw;
+    font-size: 2.5vw;
+    margin-bottom: 4vw;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.396);
+    font-weight: 500;
+  }
+
+
+
+}

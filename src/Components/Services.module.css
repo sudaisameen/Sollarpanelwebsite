@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Fjalla+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Montenegrin+Gothic+One&family=Oswald:wght@200..700&family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.parentmain {
+    height: 165vh;
+    width: 100%;
+    background-color: #fff;
+}
+
+.contentparent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+.contentparent h5 {
+    display: none;
+}
+
+
+.solarinstall {
+    position: absolute;
+    width: 40%;
+    height: 35.1%;
+    object-fit: cover;
+    z-index: 2;
+    object-position: center;
+    right: 6vw;
+    top: 3.7vw;
+}
+
+.rounded {
+    border-radius: 0.7vw;
+}
+
+
+.content1 h1 {
+    font-size: 3vw;
+    color: black;
+    font-weight: 500;
+}
+
+.content1 h3,
+span {
+    font-size: 3vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.396);
+}
+
+.content1 {
+    padding: 2vw 4vw;
+
+}
+
+.button1 {
+    padding: 0.3vw 4vw;
+
+}
+
+.button1 button {
+    border-radius: 5vw;
+    padding: 0.9vw 1.8vw;
+    font-size: 1vw;
+    color: #F2F4F4;
+    background-color: #00D47E;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+}
+
+.button1 button:hover {
+    background-color: #00a968;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 212, 126, 0.25);
+}
+
+.button1 img {
+    height: 0.8vw;
+    width: 0.8vw;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 14vw);
+    gap: 0.4vw;
+    padding: 4vw;
+}
+
+.box {
+    height: 11vw;
+    background-color: white;
+    border: 2px solid rgba(111, 107, 107, 0.233);
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.3vw;
+    padding-left: 1vw;
+}
+
+.box h2 {
+    font-size: 1.8vw;
+    color: rgba(0, 0, 0, 0.352);
+    font-weight: 500;
+}
+
+.box h3 {
+    font-size: 1.3vw;
+    color: black;
+    font-weight: 450;
+
+}
+
+.ServiceContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8vw;
+}
+
+.ServiceContent h1,
+span {
+    font-size: 3vw;
+    color: black;
+    font-weight: 500;
+
+}
+
+.ServiceContent h3 {
+    font-size: 3vw;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.396);
+
+}
+
+.serviceproof {
+    position: relative;
+    height: 30vw;
+    width: 80vw;
+    background-color: #ebefef;
+    border-radius: 0.7vw;
+    display: flex;
+}
+
+.serviceproof .left {
+    display: flex;
+    justify-content: center;
+    padding-left: 3vw;
+    flex-direction: column;
+    gap: 2vw;
+
+}
+
+.button2 button {
+    border-radius: 5vw;
+    padding: 0.9vw 1.8vw;
+    font-size: 1vw;
+    color: #F2F4F4;
+    background-color: #00D47E;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.button2 button:hover {
+    background-color: #00a968;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 212, 126, 0.25);
+}
+
+.button2 button img {
+    height: 0.8vw;
+    width: 0.8vw;
+
+}
+
+.serviceproof .left h1 {
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.left h5,
+span {
+    display: inline-block;
+}
+
+.serviceproof .left p {
+    font-size: 1.1vw;
+    font-weight: 450;
+    width: 40%;
+    line-height: 1.8vw;
+}
+
+.serviceproof .left h5 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: black;
+
+}
+
+.serviceproof .left span {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.396);
+
+}
+
+.videoedit {
+    height: 28vw;
+    width: 35vw;
+    border-radius: 0.7vw;
+}
+
+.serviceproof .right {
+    position: absolute;
+    left: 44vw;
+    top: 1vw;
+
+}
+
+@media (max-width:600px) {
+
+    .parentmain {
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .contentparent {
+        flex-direction: column;
+
+    }
+
+    .content1 h1 {
+        font-size: 7vw;
+    }
+
+    .content1 h3 {
+        font-size: 7vw;
+    }
+
+    .content1 span {
+        font-size: 7vw;
+    }
+
+    .solarinstall {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 23vw);
+        gap: 0.4vw;
+        padding: 4vw;
+    }
+
+    .box {
+        height: 21vw;
+        display: flex;
+    }
+
+    .box h2 {
+        font-size: 5vw;
+    }
+
+    .box h3 {
+        font-size: 2.1vw;
+        color: black;
+        font-weight: 450;
+
+    }
+
+    .ServiceContent {
+        gap: 5vw;
+    }
+
+    .ServiceContent h1 {
+        font-size: 4.8vw;
+    }
+
+    .ServiceContent h3 {
+        font-size: 4.8vw;
+    }
+
+    .ServiceContent span {
+        font-size: 4.8vw;
+
+    }
+
+    .serviceproof {
+        position: relative;
+        height: 40vw;
+        margin-bottom: 5vw;
+        width: 90vw;
+    }
+
+
+    .serviceproof .right {
+        left: 47vw;
+        top: 1vw;
+
+    }
+
+    .videoedit {
+        height: 38vw;
+        width: 42vw;
+        border-radius: 0.9vw;
+    }
+
+    .serviceproof .left h1 {
+        padding-top: 3vw;
+        font-size: 4vw;
+    }
+
+    .serviceproof .left p {
+        font-size: 2vw;
+        font-weight: 450;
+        line-height: 2.4vw;
+    }
+
+    .serviceproof .left h5 {
+        font-size: 2vw;
+        font-weight: 600;
+        color: black;
+        display: none;
+
+    }
+
+    .serviceproof .left span {
+        font-size: 2vw;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 0.396);
+
+    }
+
+    .button1 button {
+        display: inline-block;
+        padding: 2vw 4vw;
+        font-size: 2.4vw;
+    }
+
+    .button1 img {
+        height: 1.8vw;
+        width: 1.8vw;
+    }
+
+    .button2 {
+        display: none
+    }
+
+    .contentparent h5 {
+        display: block;
+        padding-left: 4vw;
+        font-size: 3vw;
+        color: #00D47E;
+        font-weight: 700;
+    }
+
+
+
+
+}
