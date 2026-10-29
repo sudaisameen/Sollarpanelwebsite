@@ -13,8 +13,8 @@
     height: 13vh;
     width: 100%;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     position: fixed;
     z-index: 5;
 
